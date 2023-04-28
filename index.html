@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="threejs"></div>
+    <div class="forms">
+        <div class="light">
+            <form>
+                <p>SpotLight (Л)</p>
+                <label><input type="radio" value="0.6" name="light" checked />Включить</label>
+                <label><input type="radio" value="0" name="light" />Выключить</label>
+            </form>
+            <form>
+                <p>DirectionalLight (Прямой)</p>
+                <label><input type="radio" value="1" name="light" checked />Включить</label>
+                <label><input type="radio" value="0" name="light" />Выключить</label>
+            </form>
+            <form>
+                <p>SpotLight (П)</p>
+                <label><input type="radio" value="1" name="light" checked />Включить</label>
+                <label><input type="radio" value="0" name="light" />Выключить</label>
+            </form>
+
+        </div>
+        <div>
+            <form>
+                <p>Цвет куба</p>
+                <label><input type="radio" value=#42AAFF name="color" checked />Голубой</label>
+                <label><input type="radio" value=#EE204D name="color" />Красный</label>
+                <label><input type="radio" value=#44944A name="color" />Зеленый</label>
+            </form>
+            <form>
+                <p>Цвет пирамиды</p>
+                <label><input type="radio" value=#42AAFF name="color" checked />Голубой</label>
+                <label><input type="radio" value=#EE204D name="color" />Красный</label>
+                <label><input type="radio" value=#44944A name="color" />Зеленый</label>
+            </form>
+        </div>
+    </div>
+    <script src="three.js"></script>
+    <script src="STLloader.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
